@@ -1,0 +1,17 @@
+.gamebutton {
+	padding:10px 30px;
+	border-radius:3px;
+	background-color:#CCCCCC;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	font-size:20px;
+}
+
+.gamebutton.pause {
+	background-color:#ff4242;
+}
+
+.gamebutton.play {
+	background-color:#4CAF50;
+}

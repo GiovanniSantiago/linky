@@ -6,6 +6,7 @@
     <title>Linky by GiovanniSantiago</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+	  <link rel="stylesheet" href="stylesheets/gamestyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
 	  <script src="javascripts/utils.js"></script>
@@ -36,7 +37,25 @@
 
 <p>Here we go I guess</p>
       </section>
-		<canvas id="maincanvas" width="640" height="480"></canvas>
+		<div style="position: relative; height:600px;">
+ 			<canvas id="layer1" width="800" height="600" 
+		   style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+		 	<canvas id="layer2" width="800" height="600" 
+		   style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+		</div>
+		<div id="controls">
+			<input id="speed" min="0.001" max=".05" type="range" step="0.001" value="0.01">
+			<input id="playpause" type="button" value="Play/Pause">
+			<input id="resetButton" type="button" value="Reset Time">
+			<input id="addWheelButton" type="button" value="Create Wheel">
+			<input id="toggleTraceButton" type="button" value="Toggle Pen Tracing">
+			<input id="clearTraceButton" type="button" value="Reset Pen Drawing">
+		</div>
+		
+		<div id="wheelList">
+			
+		</div>
+		
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
